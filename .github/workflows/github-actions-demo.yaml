@@ -20,5 +20,4 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: echo "URL - ${{ env.BASE }}/$(cut -d'/' -f2 <<< ${{ github.repository }})/${{ env.STATIC}}/${{ github.ref }}"
-      - run: echo "$(cut -d'/' -f2 <<< ${{ github.repository }})"
-      
+      - run: ech0 "$(cut -d'/' -f2 <<< ${{ github.ref }})"
