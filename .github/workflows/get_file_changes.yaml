@@ -1,3 +1,5 @@
+name: getFilesChanged
+on: [push]
 jobs:
   changedfiles:
     runs-on: ubuntu-latest
